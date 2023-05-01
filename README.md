@@ -1,5 +1,5 @@
 # tololus
-Corporate site developed using .NetCore Razor Pages MSQL Server And AzureSQL. Targeted .Net version is 6.0
+Corporate site developed using .NetCore Razor Pages MSSQL Server And AzureSQL Server. Targeted .Net version is 6.0
 This project is developed for corporate company ‘TOLOLUS GLOBAL RESOURCE [TGR]’. 
 It implements ASP .Net Core Razor Pages with entity frameworks.
 It target .Net framework 6.0, visual studio 2022 was used as the IDE & Microsoft SQL Server 2017 and SQL Server Management Studio 18 were used for database to store forms data while debugging locally. 
