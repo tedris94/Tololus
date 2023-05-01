@@ -255,8 +255,7 @@
 .widget_links li a {
 	background-image: none !important;
 	padding-left: 0;
-	color: #999;
-	font-size: 13px;
+	color: #2f2f2f;
 	font-weight: 300;
 	padding-top: 1px;
 }

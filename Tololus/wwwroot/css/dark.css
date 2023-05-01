@@ -1188,7 +1188,7 @@ body #side-panel.dark {
 .dark .testimonial.twitter-scroll .testi-meta span a:hover { color: #EEE; }
 
 .dark .team-desc.team-desc-bg {
-	background-color: rgba(0,0,0,0.2);
+	/*background-color: rgba(0,0,0,0.2);*/
 }
 
 .dark .team-content {

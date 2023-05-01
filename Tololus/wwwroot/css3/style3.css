@@ -8110,7 +8110,7 @@ a.text-dark:hover, a.text-dark:focus {
   .container2 {
     min-width: 992px !important; }
   .navbar {
-    display: none; }
+    display: block; }
   .badge {
     border: 1px solid #000; }
   .table {
@@ -8162,7 +8162,9 @@ h1, h2, h3, h4, h5,
   background: #2553b8 !important; }
 
 .ftco-section {
-  padding: 7em 0; }
+  padding: 2px 7px 2px 4px;
+
+}
 
 .ftco-no-pt {
   padding-top: 0; }

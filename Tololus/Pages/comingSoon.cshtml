@@ -1,7 +1,7 @@
 ﻿@page
 @model Tololus.Pages.comingSoonModel
 @{
-     Layout = "";
+     Layout = "_Layout";
     ViewData["Title"] = "Coming Soon | Tololus";
 }
 
@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" href="style2.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+
 
 <div class="uc__wrapper">
     <div class="uc__details">
@@ -54,7 +55,8 @@
                     <span asp-validation-for="comingSoon.EmailAddress" class="text-danger"></span>
 
                     <input type="submit" class="submit" value="Get Notified">
-                    <input type="button" class="submit" onclick="window.location.href='index'" width="6em" value=" Homepage" style="margin-left: 50%; margin-top:-13%">
+@*                    <input type="button" class="submit" onclick="window.location.href='index'" width="6em" value=" Homepage" style="margin-left: 50%; margin-top:-13%">
+*@
 
                 </form>                
             </div>
@@ -63,7 +65,10 @@
         </div>
 
     </div>
+
     <div class="uc__art">
         <img src="under_construction.svg" alt="">
     </div>
-</div>
+
+</div> 
+

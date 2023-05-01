@@ -21,7 +21,7 @@
 
 
 </style>
-
+<link rel="stylesheet" href="css/team.css" type="text/css" />
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -90,7 +90,7 @@
 							<div class="container">
 								<div class="slider-caption slider-caption-center">
 									<div>
-                                    <h2 class="font-primary" style="font-size: 2em;" data-animate="fadeInUp">Nature Del<img src="c:\Users\Ustaz\Downloads\4.jpg" />ight</h2>
+                                   @* <h2 class="font-primary" style="font-size: 2em;" data-animate="fadeInUp">Nature Delight</h2>*@
 									<p class="fw-light font-primary d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Yummy local variants & inter-continental dishes can be found here at tololus Deli-Buka. <br> Eatery 4 all, the peoples' choice!!</p>
 									<a href="comingSoon" class="button button-rounded button-large nott ls0 font-primary">Get Started</a>
 									</div>
@@ -118,13 +118,17 @@
 		<!-- Content
 		============================================= -->
 		<section id="content">
+			<div class="content-wrap">
+
+
+			
 
 			<div id="Services" class="content-wrap pb-0" style="z-index: 1;">
 
 				<div class="container topmargin clearfix">
 
-					<!-- What We Do
-					============================================= -->
+					<!-- What We Do ============================================= -->
+
 					<div  class="heading-block center border-0" data-heading="TOLOLUS">
 						<h3>Our Services</h3>
 						<h5>We offer Services that buttress the needs of customers!</h5>
@@ -147,7 +151,7 @@
 										<a href="#"><img src="business/images/featured/1.jpg" alt="Featured Box Image"></a>
 									</div>
 									<div class="fbox-content fbox-content-lg">
-									<h3 class="nott ls0 fw-semibold" style="text-align: center;">E-COMMERCE PLATFORM (TOSTOM)<span class="subtitle font-secondary fw-light ls0">Robust E-Shop for retailers and consumers with mouth-watering deals. Shopping made <strong><span style="text-transform: uppercase; text-decoration-line:underline;">easy!</span></strong></span></h3>
+									<h3 id="tostom" class="nott ls0 fw-semibold" style="text-align: center;">E-COMMERCE PLATFORM (TOSTOM)<span class="subtitle font-secondary fw-light ls0">Robust E-Shop for retailers and consumers with mouth-watering deals. Shopping made <strong><span style="text-transform: uppercase; text-decoration-line:underline;">easy!</span></strong></span></h3>
 										<!--  -->
 									<a href="comingSoon" class="button-link border-0 color" style="display:block; text-align:center">Read More</a>
 									</div>
@@ -160,7 +164,7 @@
 										<a href="#"><img src="business/images/featured/2.jpg" alt="Featured Box Image"></a>
 									</div>
 									<div class="fbox-content fbox-content-lg">
-										<h3 class="nott ls0 fw-semibold" style="text-align: center;">T-MED HEALTHCARE<span class="subtitle font-secondary fw-light ls0">Seeing Doctor has never been so easy! <br>
+										<h3 id="tmed" class="nott ls0 fw-semibold" style="text-align: center;">T-MED HEALTHCARE<span class="subtitle font-secondary fw-light ls0">Seeing Doctor has never been so easy! <br>
 											Health at a glance.
 											</span></h3>
 
@@ -175,7 +179,7 @@
 										<a href="#"><img src="business/images/featured/3.jpg" alt="Featured Box Image"></a>
 									</div>
 									<div class="fbox-content fbox-content-lg">
-										<h3 class="nott ls0 fw-semibold" style="text-align: center;">TGR EDUCATIONAL CONSULTS<span class="subtitle font-secondary fw-light ls0">Untie the knot of your international dreamed school/scholarship. <br>
+										<h3 id="edu" class="nott ls0 fw-semibold" style="text-align: center;">TGR EDUCATIONAL CONSULTS<span class="subtitle font-secondary fw-light ls0">Untie the knot of your international dreamed school/scholarship. <br>
 											Do you want to study abroad? <span style="font-style:italic; text-transform:capitalize;"> <strong>Explore TGR EDUCATIONAL CONSULTS</strong></span>
 											</span></h3>
 									<a href="comingSoon" class="button-link border-0 color" style="display:block; text-align: center;"> Read More</a>
@@ -189,7 +193,7 @@
 									<a href="#"><img src="business/images/featured/4.jpg" alt="Featured Box Image"></a>
 								</div>
 								<div class="fbox-content fbox-content-lg">
-									<h3 class="nott ls0 fw-semibold" style="text-align: center;">
+									<h3 id="nature" class="nott ls0 fw-semibold" style="text-align: center;">
 										NATURE DELIGHT<span class="subtitle font-secondary fw-light ls0">
 											Non-Stop finger linking! Biomes of delicacies. <br>
 											<span style="font-style:italic; text-transform:capitalize;"> <strong>Nature Delight, Tasty! Yummy! </strong></span>
@@ -353,7 +357,7 @@ With our strong local & international networks and robust human relations,
 						<ul class="grid-filter style-2 mx-auto" data-container="#portfolio">
 
 							<li class="activeFilter"><a href="#" data-filter="*">SHOW ALL</a></li>
-							<li><a href="#" data-filter=".pf-tostom">TOSTOM</a></li>
+							<li><a href="#" data-filter=".pf-graphics">TOSTOM</a></li>
 							<li><a href="#" data-filter=".pf-illustrations">T-MED HEALTHCARE</a></li>
 							<li><a href="#" data-filter=".pf-uielements">TGR EDUCATIONAL CONSULTS</a></li>
 							<li><a href="#" data-filter=".pf-media">NATURE DELIGHT</a></li>
@@ -362,188 +366,187 @@ With our strong local & international networks and robust human relations,
 					</div>
 				</div>
 
-				<!-- Portfolio Items
+			<!-- Portfolio Items
 				============================================= -->
-				<div id="portfolio" class="portfolio row grid-container g-0">
+				<div id="portfolio" class="portfolio row g-0 portfolio-reveal grid-container">
 
-					<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-tostom">
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-media pf-icons">
 						<div class="grid-inner">
 							<div class="portfolio-image">
-								<a href="#">
-									<img src="business/images/portfolio/1.jpg" alt="TOSTOM">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
 								</a>
 								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="portfolio-single.html">Newest E-Commerce</a></h3>
-											<span><a href="#">TOSTOM</a>, <a href="#">Shops</a></span>
-										</div>
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
 								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Open Imagination</a></h3>
+								<span><a href="#">Media</a>, <a href="#">Icons</a></span>
 							</div>
 						</div>
 					</article>
-
 					
 
-					<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-illustrations">
+						<div class="grid-inner">
+							<div class="portfolio-image">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/2.jpg" alt="Locked Steel Gate">
+								</a>
+								<div class="bg-overlay">
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="images/portfolio/full/2.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
+									</div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Locked Steel Gate</a></h3>
+								<span><a href="#">Illustrations</a></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
 						<div class="grid-inner">
 							<div class="portfolio-image">
 								<a href="#">
-									<img src="business/images/portfolio/3.jpg" alt="Open Imagination">
+									<img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
 								</a>
 								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="#">Mac Sunglasses</a></h3>
-											<span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
-										</div>
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="https://vimeo.com/89396394" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
 								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-video.html">Mac Sunglasses</a></h3>
+								<span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
 							</div>
 						</div>
 					</article>
 
-				
-
-
-					<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-tostom">
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-icons pf-illustrations">
 						<div class="grid-inner">
 							<div class="portfolio-image">
-								<a href="#">
-									<img src="business/images/portfolio/2.jpg" alt="Tostom Grocceries">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/4.jpg" alt="Open Imagination">
+								</a>
+								<div class="bg-overlay" data-lightbox="gallery">
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="images/portfolio/full/4.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+										<a href="images/portfolio/full/4-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
+									</div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-gallery.html">Morning Dew</a></h3>
+								<span><a href="#">Icons</a>, <a href="#">Illustrations</a></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-uielements pf-media">
+						<div class="grid-inner">
+							<div class="portfolio-image">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/5.jpg" alt="Console Activity">
 								</a>
 								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="#">Grocceries</a></h3>
-											<span><a href="#">Tostom</a></span>
-										</div>
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="images/portfolio/full/5.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
 								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Console Activity</a></h3>
+								<span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
 							</div>
 						</div>
 					</article>
 
-						<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-graphics pf-illustrations">
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-illustrations">
 						<div class="grid-inner">
 							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="#"><img src="business/images/portfolio/5-2.jpg" alt="Open Imagination"></a></div>
-										</div>
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/6.jpg" alt="Open Imagination">
+								</a>
+								<div class="bg-overlay" data-lightbox="gallery">
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="images/portfolio/full/6.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+										<a href="images/portfolio/full/6-1.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="images/portfolio/full/6-2.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="images/portfolio/full/6-3.jpg" class="d-none" data-lightbox="gallery-item"></a>
+										<a href="portfolio-single-gallery.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
 								</div>
-								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="#">Shake It!</a></h3>
-											<span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
-										</div>
-									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-gallery.html">Shake It!</a></h3>
+								<span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
 							</div>
 						</div>
 					</article>
 
-					<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-uielements pf-media">
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-uielements pf-icons">
 						<div class="grid-inner">
 							<div class="portfolio-image">
-								<a href="#">
-									<img src="business/images/portfolio/7.jpg" alt="Open Imagination">
+								<a href="portfolio-single-video.html">
+									<img src="images/portfolio/4/7.jpg" alt="Backpack Contents">
 								</a>
 								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="#">Console Activity</a></h3>
-											<span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
-										</div>
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="https://www.youtube.com/watch?v=kuceVNBTJio" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
 								</div>
 							</div>
-						</div>
-					</article>					
-
-								<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-icons pf-illustrations">
-						<div class="grid-inner">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="#"><img src="business/images/portfolio/4.jpg" alt="Open Imagination"></a></div>
-											<div class="slide"><a href="#"><img src="business/images/portfolio/2.jpg" alt="Open Imagination"></a></div>
-										</div>
-									</div>
-								</div>
-								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="#">Morning Dew</a></h3>
-											<span><a href="#">Icons</a>, <a href="#">Illustrations</a></span>
-										</div>
-									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-								</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-video.html">Backpack Contents</a></h3>
+								<span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
 							</div>
 						</div>
 					</article>
 
-					<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-graphics">
+					<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics">
 						<div class="grid-inner">
 							<div class="portfolio-image">
-								<a href="#">
-									<img src="business/images/portfolio/8.jpg" alt="Open Imagination">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/8.jpg" alt="Sunset Bulb Glow">
 								</a>
 								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="#">Sunset Bulb Glow</a></h3>
-											<span><a href="#">Graphics</a></span>
-										</div>
+									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+										<a href="images/portfolio/full/8.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+										<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
 									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
 								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Sunset Bulb Glow</a></h3>
+								<span><a href="#">Graphics</a></span>
 							</div>
 						</div>
 					</article>
-					<article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 pf-tostom">
-						<div class="grid-inner">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="business/images/portfolio/1.jpg" alt="TOSTOM">
-								</a>
-								<div class="bg-overlay">
-									<div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-										<!-- Decription: Start -->
-										<div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-											<h3><a href="portfolio-single.html">Newest E-Commerce</a></h3>
-											<span><a href="#">TOSTOM</a>, <a href="#">Shops</a></span>
-										</div>
-									</div>
-									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-								</div>
-							</div>
-						</div>
-					</article>
-			
 
-				
+				</div>
 
-				</div><!-- #portfolio end -->
-			</div>
+
+
 
 
 				<!-- Video Sections
@@ -709,41 +712,129 @@ With our strong local & international networks and robust human relations,
 
 				<!-- Team Work
 				============================================= -->
-				<div id="idris" class="section bg-transparent pb-0 mb-0" id="About">
-					<div class="container">
-						<div class="row">
+			
+	<section class="ftco-section">
+		<div class="container">
+			
+			<div class="fancy-title title-border title-center">
+						<h3>Meet Our Team</h3>
+					</div>
+						<div id="idris" id="oc-team-list" class="owl-carousel team-carousel carousel-widget" data-margin="30" data-nav="false" data-loop="false" data-autoplay="3000" data-items-md="1" data-items-xl="2">
 
-							<div class="col-lg-5 order-lg-12">
-								<div class="device-xl device-md topmargin-lg"></div>
-								<h3 class="mb-0" style="font-size: 40px;">Great Team Work.</h3>
-								<h3 class="fw-light ls4 text-lowercase" style="font-size: 15px; color: #999;">Designed by <span style="text-transform:capitalize">Idris Bala Usman</span></h3>
-								<p style="text-align:justify">
-									I am a Certified Microsoft Trainer, Program Manager and Project Manager with extensive expertise.
-									I am skilled in  SCCM, C#, .NetCore software development, hardware maintenance and Microsoft Project (MS Office 2007, 2010, 2013, 2016 & 2019),. My strengths are my leadership capabilities, and my capacity to construct positive working 
-									relationships with people at all levels of the organization, resulting in successful accomplishment of business objectives. 
-									I am an effective IT Project Management Professional with over 5 years of experience and remarkable vendor management
-									capabilities. My passion is improving the quality of client experience, especially when quality, value, efficiency, 
-									and cost management are of paramount importance. Idris holds certifications such as 
-									Azure Administrator (Cloud Associate), ATT Training (IAMMCT) and Microsoft Certified Trainer.
+						<div class="oc-item">
+							<div class="team team-list row align-items-center">
+								<div class="team-image col-sm-6">
+									<img src="images/team/Idris.png" alt="Idris">
+								</div>
+								<div class="team-desc col-sm-6">
+									<div class="team-title"><h4>Idris Bala Usman</h4><span>SA, Lead Software Engineer</span></div>
+									<div class="team-content">
+										<p>
+											I am an experienced C#, .Net Core developer,MCT, Program Manager.
+I am an effective IT project management expert with over 5 years of experience and strong vendor management skills.
+
+
+										
+										</p>
+									</div>
+										<a href="https://github.com/tedris94" class="social-icon si-rounded si-small si-github">
+										<i class="icon-github"></i>
+										<i class="icon-github"></i>
+									</a>
 								
-								</p>
-							<a href="https://www.linkedin.com/in/idris-usman-b79a3116a/" target="_blank" class="button-link bottommargin">Read More</a>
-							</div>
-
-							<div class="col-lg-7 order-lg-1">
-								<div style="position: relative; margin-bottom: 0;" class="overflow-hidden" data-height-xl="520" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
-									<img class="man" src="business/images/sections/Idris2.png" style="position: absolute; top: 0; left: auto;" alt="Chrome">
+									<a href="https://ng.linkedin.com/in/idris-usman-b79a3116a" class="social-icon si-rounded si-small si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+										<a href="https://web.facebook.com/idrisbalausman9" class="social-icon si-rounded si-small si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
 								</div>
 							</div>
-
 						</div>
+						<div class="oc-item">
+							<div class="team team-list row align-items-center">
+								<div class="team-image col-sm-6">
+									<img src="images/team/2.jpg" alt="Josh Clark">
+								</div>
+								<div class="team-desc col-sm-6">
+									<div class="team-title"><h4>Abdulmujeeb  Alatise</h4><span>Manager Tostom<sup>tm</sup></span></div>
+									<div class="team-content">
+										<p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
+									</div>
+									<a href="#" class="social-icon si-rounded si-small si-github">
+										<i class="icon-github"></i>
+										<i class="icon-github"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-dribbble">
+										<i class="icon-dribbble"></i>
+										<i class="icon-dribbble"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="oc-item">
+							<div class="team team-list row align-items-center">
+								<div class="team-image col-sm-6">
+									<img src="images/team/8.jpg" alt="Mary Jane">
+								</div>
+								<div class="team-desc col-sm-6">
+									<div class="team-title"><h4>Mary Jane</h4><span>Sales</span></div>
+									<div class="team-content">
+										<p>Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower.</p>
+									</div>
+									<a href="#" class="social-icon si-rounded si-small si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="oc-item">
+							<div class="team team-list row align-items-center">
+								<div class="team-image col-sm-6">
+									<img src="images/team/4.jpg" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc col-sm-6">
+									<div class="team-title"><h4>Nix Maxwell</h4><span>Support</span></div>
+									<div class="team-content">
+										<p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
+									</div>
+									<a href="#" class="social-icon si-rounded si-small si-forrst">
+										<i class="icon-forrst"></i>
+										<i class="icon-forrst"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-skype">
+										<i class="icon-skype"></i>
+										<i class="icon-skype"></i>
+									</a>
+									<a href="#" class="social-icon si-rounded si-small si-flickr">
+										<i class="icon-flickr"></i>
+										<i class="icon-flickr"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
 					</div>
-				</div>
 
 
 
-
-
+</div>
+	</section>
 				<!-- Brands Carousel
 				============================================= -->
 	
@@ -916,7 +1007,7 @@ With our strong local & international networks and robust human relations,
 										<span class="fa fa-paper-plane"></span>
 									</div>
 									<div class="text">
-										<p><span>Email:</span> <a href="mailto:usmanbalaidriss@mail.com">info@tololus.com</a></p>
+										<p><span>Email:</span> <a href="mailto:info@tololus.com">info@tololus.com</a></p>
 									</div>
 								</div>
 							</div>
@@ -927,7 +1018,7 @@ With our strong local & international networks and robust human relations,
 										<span class="fa fa-globe"></span>
 									</div>
 									<div class="text">
-										<p><span>Website</span> <a href="#">tololus.com</a></p>
+										<p><span>Website</span> <a href="https://www.tololus.com">tololus.com</a></p>
 									</div>
 								</div>
 							</div>
@@ -940,7 +1031,7 @@ With our strong local & international networks and robust human relations,
 		</div>
 	</section>
 
-
+	</div> @*content-wrap end*@
 
 
 

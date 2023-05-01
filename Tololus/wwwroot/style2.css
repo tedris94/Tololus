@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-html, body {
+/*html, body {
     height: 100%;
-}
+}*/
 
 body {
     font-size: 1rem;
     line-height: 1.65;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #8e44ad 50%, #e9dbef 50%);
+    background: linear-gradient(90deg, #8e44ad 50%, #e9dbef 50% );
     color: #fff;
 }
 
@@ -21,7 +21,7 @@ body {
 /*Main Styles*/
 
 .uc__wrapper {
-    height: 100vh;
+  /*  height: 100vh;*/
     display: flex;
     justify-content: space-between;
 }
@@ -46,6 +46,8 @@ body {
     width: 70%;
 }
 
+
+
 .title {
     display: inline-block;
     font-size: 40px;
@@ -59,7 +61,7 @@ body {
     bottom: 0;
     left: 0;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffF;
     width: 140px;
 }
 
@@ -78,9 +80,9 @@ body {
 }
 
 .uc__subscribe {
-    background-color: #9b59b6;
-    padding: 3rem;
-    width: 85%;
+    background-color: #9b59b;
+    padding: 2px;
+    width: auto;
     border-radius: 3px;
     box-shadow: 0 25px 200px -12px rgba(0, 0, 0, .25);
 }
@@ -110,17 +112,7 @@ body {
         margin-top: 10px;
     }
 
-    .uc___form input {
-        font-family: inherit;
-        outline: none;
-        font-size: 90%;
-        padding: 10px 1rem;
-        border: none;
-        display: flex;
-        align-content: space-evenly;
-        border-radius: 100px;
-        margin-top: 10px;
-    }
+
 
 .uc__form .email .text {
     width: 100%;
@@ -146,3 +138,87 @@ button{
 .uc__form .submit:hover{
     background-color: #8e44ad;
 }
+
+
+/*sm*/
+@media screen and (max-width: 640px) {
+    body {
+        background: linear-gradient(145deg, #8e44ad, #e9dbef 20%);
+        height: 100%;
+    }
+
+    .uc__wrapper {
+        height: 100%;
+        display: block;
+    }
+
+    .uc__art {
+        display: none;
+    }
+
+    .title::after {
+        width: 100%;
+    }
+
+    .uc__description {
+       
+        color: #fff;
+    }
+}
+
+
+
+.success-text {
+    /* Registered Successfully */
+
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 150%;
+    color: #4E4B66;
+}
+
+
+.div{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 500px;
+    top: 100px;
+    padding: 24px;
+    gap: 16px;
+    position: absolute;
+    width: 441px;
+    height: 399px;
+    /* Grayscale/White */
+    background: #FFF;
+    border-radius: 16px;
+}
+
+/* success page */
+
+/* sm */
+@media (max-width: 640px) {
+    .bodySuccess {
+        background: linear-gradient(45deg,#EE3964,#8939EE);
+    }
+    .div{
+        /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left:50px;
+    top: 100px;
+    padding: 24px;
+    gap: 16px;
+    position: absolute;
+    width: 25rem;
+    height: 0 24rem;
+    /* Grayscale/White */
+    background: #FFF;
+    border-radius: 16px;
+    }
+    
+
+  }
+

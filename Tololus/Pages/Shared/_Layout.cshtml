@@ -44,9 +44,10 @@
 
 </head>
 <body class="stretched">
+
 	<!-- Header
 		============================================= -->
-	<header id="header" class="full-header transparent-header dark header-size-md" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="80">
+	<header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
 		<div id="header-wrap">
 			<div class="container">
 				<div class="header-row">
@@ -54,8 +55,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="./" class="standard-logo" data-dark-logo="business/images/logo-dark.png"><img src="business/images/logo.png" alt="Canvas Logo"></a>
-						<a href="./" class="retina-logo" data-dark-logo="business/images/logo-dark@2x.png"><img src="business/images/logo@2x.png" alt="Canvas Logo"></a>
+						<a href="./" class="standard-logo" data-dark-logo="business/images/logo-dark.png"><img src="business/images/logo.png" alt="tololus Logo"></a>
+						<a href="./" class="retina-logo" data-dark-logo="business/images/logo-dark@2x.png"><img src="business/images/logo@2x.png" alt="tololus Logo"></a>
 					</div><!-- #logo end -->
 
 					<div class="header-misc">
@@ -74,10 +75,11 @@
 
 					<!-- Primary Navigation
 					============================================= -->
+
 					<nav class="primary-menu not-dark">
 
 						<ul class="menu-container">
-							<li class="menu-item active"><a class="menu-link" href="#"><div>Home</div></a></li>
+							<li class="menu-item active"><a class="menu-link" href="./"><div>Home</div></a></li>
 							<li class="menu-item"><a class="menu-link" data-scrollto="#Services" data-offset="0" class="dark one-page-arrow" href="#Services"><div>Services  </div></a></li>
 							<li class="menu-item"><a class="menu-link" data-scrollto="#About" data-offset="0" class="dark one-page-arrow" href="#About"><div>About</div></a></li>
 							<li class="menu-item"><a class="menu-link" data-scrollto="#Portfolio" data-offset="0" class="dark one-page-arrow" href="#Portfolio"><div>Portfolio </div></a></li>
@@ -86,9 +88,9 @@
 						</ul>
 
 					</nav><!-- #primary-menu end -->
-
-					<form class="top-search-form" action="search.html" method="get">
-						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+				
+					<form class="top-search-form" action="search" method="get">
+						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="on">
 					</form>
 
 				</div>
@@ -111,7 +113,7 @@
 		<!-- Footer -->
 	<!-- Footer
 	============================================= -->
-	<footer id="footer" class="border-0" style="padding: 30px 0; background-color: #4E4B66 color: #FFF">
+	<footer id="footer" class="border-0" style="padding: 30px 0; background-color: #ccc color: #000;">
 		<div class="container clearfix">
 			<!-- Footer Widgets
 			============================================= -->
@@ -119,7 +121,7 @@
 
 				<div class="row col-mb-50">
 					<div class="col-md-3">
-						<img src="business/images/logo@2x.png" alt="Image" height="100" style="margin-top: -30px">
+						<a href="./"> <img src="business/images/logo@2x.png" alt="Image" height="100" style="margin-top: -30px"></a>
 					</div>
 
 					<div class="col-md-9">
@@ -129,10 +131,10 @@
 								<div class="widget widget_links widget-li-noicon clearfix">
 									<h4>Company</h4>
 									<ul>
-										<li><a href="#">Tostom</a></li>
-										<li><a href="#">T-Med Healthcare</a></li>
-										<li><a href="#">TGR Education Consults</a></li>
-										<li><a href="#">Nature Delight</a></li>
+										<li><a href="#tostom">Tostom</a></li>
+										<li><a href="#tmed">T-Med Healthcare</a></li>
+										<li><a href="#edu">TGR Education Consults</a></li>
+										<li><a href="#nature">Nature Delight</a></li>
 
 									</ul>
 								</div>
@@ -141,10 +143,10 @@
 								<div class="widget widget_links widget-li-noicon clearfix">
 									<h4>Community</h4>
 									<ul>
-										<li><a href="#">Documentation</a></li>
-										<li><a href="#">Feedback</a></li>
+										<li><a href="./">Documentation</a></li>
+										<li><a href="./">Feedback</a></li>
 
-										<li><a href="#">Support Forums</a></li>
+										<li><a href="./">Support Forums</a></li>
 
 									</ul>
 								</div>
@@ -153,7 +155,8 @@
 								<div class="widget widget_links widget-li-noicon clearfix">
 									<h4>Resources</h4>
 									<ul>
-										<li><a href="./">Tolo'lus</a></li>
+										
+										<li><a  href="./">Tolo'lus</a></li>
 										<li><a href="#About">About</a></li>
 										<li><a href="#Services">Services</a></li>
 										<li><a href="#Portfolio">Portfolio</a></li>
@@ -179,7 +182,7 @@
 
 						<div class="row justify-content-between col-mb-30">
 							<div class="col-12 col-md-auto text-center text-md-start">
-								<small class="fw-light" style="color: #AAA">Copyrights &copy; @DateTime.Now.Year - All Rights Reserved by Tololus Global Resources.</small>
+								<small class="fw-light" style="color: #2f2f2f">Copyrights &copy; @DateTime.Now.Year - All Rights Reserved by Tololus Global Resources.</small>
 							</div>
 
 							<div class="col-12 col-md-auto text-center text-md-end">
@@ -246,6 +249,7 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
+
 	<script>
 		jQuery(window).on('pluginCarouselReady', function () {
 			$('#oc-features').owlCarousel({
@@ -263,6 +267,21 @@
 		});
 	</script>
 
+	 <script>
+	const hamburger = document.querySelector(".header");
+	const navMenu = document.querySelector(".menu-container");
+
+	hamburger.addEventListener("click", () =>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+	} )
+
+	document.querySelectorAll("menu-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+	}))
+
+	</script>
 
 
 
