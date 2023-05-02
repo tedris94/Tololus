@@ -1,5 +1,4 @@
-﻿using AspNetCore.ReCaptcha;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Tololus.Data;
 
@@ -12,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 //builder.Services.AddReCaptcha(builder.Configuration.GetSection("ReCaptcha"));
 builder.Services.AddDbContext<ComingSoonContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING") ?? throw new InvalidOperationException("Connection string 'ComingSoonContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ComingSoonContext") ?? throw new InvalidOperationException("Connection string 'ComingSoonContext' not found.")));
 
 
 
@@ -22,7 +21,7 @@ builder.Services.AddDbContext<TololusContext>(options =>
 
 
 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING") ?? throw new InvalidOperationException("Connection string 'TololusContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TololusContext") ?? throw new InvalidOperationException("Connection string 'TololusContext' not found.")));
 var app = builder.Build();
 
 
