@@ -1,5 +1,4 @@
-﻿using AspNetCore.ReCaptcha;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Tololus.Data;
 
