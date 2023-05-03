@@ -1,23 +1,13 @@
 ﻿@page
-@model ErrorModel
+@model Tololus.Pages.errors._404Model
 @{
     Layout = "";
-    ViewData["Title"] = "Error";
+    ViewData["title"] = "Page does not exists";
 }
 
+<link rel="stylesheet" href="/errorStyle.css" type="text/css" />
 
-<link rel="stylesheet" href="~/errorStyle.css" type="text/css" />
 
-
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
-
-@if (Model.ShowRequestId)
-{
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
-}
 
   <div id="wrap">
     <div id="wordsearch">
@@ -157,8 +147,6 @@
 
  
 
-
-
 <div id="main-content">
       <h1>We couldn't find what you were looking for.</h1>
 
@@ -184,3 +172,9 @@
 
    
   </div>
+
+
+
+
+  
+  
