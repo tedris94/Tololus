@@ -218,6 +218,16 @@
 .grid-filter li.activeFilter a { font-weight: normal; }
 .grid-overlay { background-color: rgba(0, 0, 0, 0.75); }
 
+@media screen and (max-width:640px){
+	.grid-filter li.activeFilter {
+		display: none;
+		list-style-type: none;
+	}
+}
+
+
+
+
 
 /* Testimonial
 -----------------------------------------------------------------*/

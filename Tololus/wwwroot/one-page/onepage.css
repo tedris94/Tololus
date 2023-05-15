@@ -232,6 +232,8 @@
 	letter-spacing: 2px;
 }
 
+
+
 .team-title span {
 	font-style: normal;
 	color: #999;
@@ -246,6 +248,8 @@
 	width: 100%;
 	bottom: 20px;
 }
+
+
 
 .parallax .fslider * { -webkit-backface-visibility: hidden !important; }
 

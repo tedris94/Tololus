@@ -34,6 +34,7 @@
 
 	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 
+	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 
 	<!-- Theme Color
@@ -164,7 +165,7 @@
 										<li><a href="#">Phone</a></li>
 										<li><a href="tel:+2349064951938">+234 (0) 916 495 1938</a></li>
 										<li><a href="#">Email</a></li>
-										<li><a href="mailto:usmanbalaidriss@gmail.com">usmanbalaidriss@gmail.com</a></li>
+										<li><a href="mailto:usmanbalaidriss@gmail.com,info@tololus.com">info@tololus.com</a></li>
 									</ul>
 								</div>
 							</div>
@@ -234,13 +235,33 @@
 	============================================= -->
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
-
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="src/jquery.shorten.js"></script>
 
 
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
 
+
+		 <script>
+		$(document).ready(function () {
+
+			$(".team_content").shorten({
+				moreText: 'read more',
+				lessText: 'read less'
+			});
+
+
+			$(".team_content").shorten({
+				lessText: 'read less'
+			});
+
+			$(".team_content").shorten({ showChars: 10 });
+
+		});
+
+	</script>
 
 	<script>
 		jQuery(window).on('pluginCarouselReady', function () {
@@ -258,24 +279,6 @@
 			});
 		});
 	</script>
-
-	 <script>
-	const hamburger = document.querySelector(".header");
-	const navMenu = document.querySelector(".menu-container");
-
-	hamburger.addEventListener("click", () =>{
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-	} )
-
-	document.querySelectorAll("menu-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-	}))
-
-	</script>
-
-
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
