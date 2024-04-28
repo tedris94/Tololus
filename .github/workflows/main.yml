@@ -32,7 +32,7 @@ jobs:
           server-computer-name: https://win9081.site4now.net:8172
           server-username: tololus-001
           server-password: "Tololus=0"
-          source-path: 'https://github.com/tedris94/Tololus'
+          source-path: '\Tololus\'
       - name: Migrate
         run: |
          dotnet tool install --global dotnet-ef
