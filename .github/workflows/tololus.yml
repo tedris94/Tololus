@@ -38,5 +38,5 @@ jobs:
           cd tololus
           dotnet tool install --global dotnet-ef
           -context: 'TololusContext'
-          dotnet ef database update --connection  'Data Source=SQL9001.site4now.net;Database=db_aa6158_tololus;User Id=db_aa6158_tololus_admin;Password=Tololus=0;'
+          dotnet ef database update --connection  'Data Source=SQL9001.site4now.net;Database=db_aa6158_tololus;User Id=db_aa6158_tololus_admin;Password=Tololus=0;' --context TololusContext
           
