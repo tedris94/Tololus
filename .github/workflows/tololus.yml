@@ -1,4 +1,4 @@
-name: Build, publish and deploy Tololus main site to Simply
+name: Build, Publish and Deploy project to Simply
 
 on: [push]
 
@@ -20,7 +20,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish
+        run: dotnet publish Tololus/Tololus.csproj --configuration Release --output ./publish --runtime win-x86 --self-contained false -p:PublishTrimmed=false -p:PublishSingleFile=false
         
       - name: Test with .NET
         run: dotnet test
@@ -32,10 +32,9 @@ jobs:
           server-computer-name: https://win9081.site4now.net:8172
           server-username: tololus-001
           server-password: "Tololus=0"
-          source-path: '\Tololus\bin\release\'
-      - name: Migrate
+          
+      - name: EF Migrate
         run: |
           cd tololus
           dotnet tool install --global dotnet-ef
           dotnet ef database update --connection  'Data Source=SQL9001.site4now.net;Database=db_aa6158_tololus;User Id=db_aa6158_tololus_admin;Password=Tololus=0;' --context TololusContext
-          
